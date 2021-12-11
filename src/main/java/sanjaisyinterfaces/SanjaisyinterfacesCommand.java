@@ -21,8 +21,8 @@ public class SanjaisyinterfacesCommand implements Runnable {
     }
 
     public void run() {
-        SomeCommandType firstCommand = new SomeCommandType();
-        SomeOtherCommandType secondCommand = new SomeOtherCommandType();
+        CommandType firstCommand = new SomeCommandType();
+        CommandType secondCommand = new SomeOtherCommandType();
         serviceBus.send(firstCommand);
         serviceBus.send(secondCommand);
     }

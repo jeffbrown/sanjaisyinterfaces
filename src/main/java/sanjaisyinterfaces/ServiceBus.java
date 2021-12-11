@@ -22,7 +22,7 @@ public class ServiceBus implements IServiceBus {
     }
 
     @Override
-    public Object send(Object c) {
+    public Object send(CommandType c) {
         IRequestHandler handler = handlerMap.get(c.getClass());
         if (handler == null)
             throw new UnsupportedOperationException("Unsupported command: " + c.getClass());

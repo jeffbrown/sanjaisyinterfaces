@@ -1,4 +1,4 @@
 package sanjaisyinterfaces;
 
-public class SomeCommandType {
+public class SomeCommandType implements CommandType {
 }
